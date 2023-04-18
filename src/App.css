@@ -1,38 +1,55 @@
-.App {
+*{
+  font-family: cursive;
+}
+.gallary-wraper{
+  padding: 50px;
+  background-color: rgb(6, 192, 170);
+  height: 100%;
+}
+.gallary-wraper h2{
   text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
+  
+ 
+
+}
+.gallary-continer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-gap: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gallary-item img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 20px 0px 50px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-item ul{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+  margin-bottom: 30px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.filter-item ul button{
+  padding: 12px 30px ;
+  border-radius: 10px;
+  background-color: rgb(14, 210, 240);
+  border: none;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1rem;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter-item ul button:hover{
+  background-color: coral;
 }
