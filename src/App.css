@@ -53,3 +53,13 @@
 .filter-item ul button:hover{
   background-color: coral;
 }
+
+/* / mediya quarry */
+
+@media only screen and (max-width: 600px) {
+  .gallary-continer{
+    grid-template-columns: 1fr  ;
+
+  }
+  
+}
